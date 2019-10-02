@@ -13,10 +13,14 @@ youtube-dl -F https://www.youtube.com/watch?v=f6gRpmi5zCI
 youtube-dl -f136 https://www.youtube.com/watch?v=f6gRpmi5zCI -o day1_720p.mp4
 
 * create sample video using ffmpeg for testing reason
+```
 ffmpeg -ss 00:29:50 -i videos/day1_720p.mp4 -t 00:00:10 -acodec copy videos/day1_sample03.mp4
+```
 
 * extract frame using ffmpeg
+```
 ffmpeg -i videos/day1_sample03.mp4 -ss 00:00:05.00 -vframes 1 videos/day1_p03.jpg
+```
 
 # Tune Up
 https://docs.opencv.org/master/d7/d4d/tutorial_py_thresholding.html
